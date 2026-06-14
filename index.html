@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-gray-900 min-h-screen flex justify-center items-center p-4">
+
+    <div class="bg-slate-800 text-white p-4 sm:p-6 md:p-8 rounded-lg w-full max-w-sm sm:max-w-md md:max-w-xl mx-auto">
+
+        <div class="text-center mb-6">
+             <h1 class="text-2xl font-bold text-blue-500 mb-4">Signup Here</h1>
+             <p>Signup to Create your account and unlock exclusive features</p>
+        </div>
+
+        <form class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6" action="" method="post" >
+
+            <div>
+                <label for="username" class="flex gap-2 mb-2 font-medium">Username <i class="bi bi-person"></i> </label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" class="w-full bg-slate-600 text-white px-2 py-2 placeholder:text-gray-400 border border-gray-500">
+            </div>
+
+            <div>
+                <label for="email" class="flex gap-2 mb-2 font-medium">Email <i class="bi bi-envelope"></i></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full bg-slate-600 text-white px-2 py-2 placeholder:text-gray-400 border border-gray-500">
+            </div>
+
+            <div>
+                <label for="password" class="flex gap-2 mb-2 font-medium">Password <i class="bi bi-lock"></i></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full bg-slate-600 text-white px-2 py-2 placeholder:text-gray-400 border border-gray-500">
+            </div>
+
+            <div>
+                <label for="address" class="flex gap-2 mb-2 font-medium">Address <i class="bi bi-geo-alt"></i></label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" class="w-full bg-slate-600 text-white px-2 py-2 placeholder:text-gray-400 border border-gray-500">
+            </div>
+
+            <div>
+                <label for="phone" class="flex gap-2 mb-2 font-medium">Phone Number <i class="bi bi-telephone"></i></label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="w-full bg-slate-600 text-white px-2 py-2 placeholder:text-gray-400 border border-gray-500">
+            </div>
+
+            <div>
+                <label for="gender" class="flex gap-2 mb-4 font-medium">Gender <i class="bi bi-gender-ambiguous"></i></label>
+
+                <div class="flex flex-wrap items-center gap-4"> 
+                    <label for="male" class="flex items-center gap-2"><input type="radio" id="male" name="gender" value="male">Male</label>
+                    <label for="female" class="flex items-center gap-2"><input type="radio" id="female" name="gender" value="female">Female</label>
+                    <label for="other" class="flex items-center gap-2"><input type="radio" id="other" name="gender" value="other">Other</label>
+                </div>
+            </div>
+
+            <button type="submit" class="col-span-all text-center mt-4 rounded-lg bg-blue-500 hover:bg-blue-600 text-white py-2">
+                Signup
+            </button>
+
+            <p class=" text-center col-span-all">Already have an account?<a class="text-blue-500" href="#"> Login</a></p>
+
+        </form>
+    </div>
+</body>
+</html>
